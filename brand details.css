@@ -1,0 +1,271 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: rgb(248, 247, 247);
+    box-sizing: border-box;
+   
+ }
+
+html{
+    scroll-behavior: smooth;
+ }
+
+ hr{
+    border: none;
+    border-bottom: 1px solid lightslategray;
+ }
+ /* for the navbar  */
+ .navbar{
+    display: flex;
+    padding: 18px 5px;
+    justify-content: space-around;   
+    height: 24px;
+    background-color: rgba(245, 245, 245, 0.90);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* .logo-icon{
+
+
+}  */
+
+
+.search-box {
+  background-color: white;
+  width: 500px;
+  border-radius: 6px;
+  padding: 17px 12px;
+  margin-top: -7px;
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 13px;
+}
+
+#search-box-input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+} 
+
+/* heading section */
+
+
+section{
+    background-color: white;
+    padding: 35px;
+}
+
+section img{
+    width: 300px;
+    height: inherit;
+}
+
+section h1{
+    margin-bottom: 18px;
+}
+section div{
+    display: flex;
+    gap: 18px;
+}
+
+
+/* sorting section */
+
+.sorting-section{
+    display: flex;
+    gap: 21px;
+    background-color: transparent;
+}
+
+.sort{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance:none ;
+    -moz-appearance: none;
+    padding: 10px  14px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+}
+
+select:hover{
+    border-color:#cbd5e1 ;
+}
+
+select:focus{
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+}
+
+option{
+    font-size: 14px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* phone display section */
+
+.phone-display-section{
+    background-color: transparent;
+}
+
+.phone-display-container{
+    display: grid;
+    padding: 25px;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.phone-display-card{
+    width: 200px;
+    height: 300px;
+    background-color: #666;
+}
+
+/* next page selection section */
+
+.next-page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+}
+
+.next-page-card{
+    background-color: white;
+
+}
+
+/* footer section */
+
+footer{
+   height: 180px;
+}
+
+footer hr{
+   margin: 20px;
+}
+
+.footer-container{
+   display: flex;
+   justify-content: space-between;
+   padding: 25px;
+}
+
+.footercard1-contact{
+   font-weight: 500;
+   margin-top: 50px;
+   margin-bottom: 15px;
+}
+
+.footercard1-email a{
+   color: blue;
+   text-decoration: none;
+}
+
+.footer-policy{
+   margin-top: 89px;
+}
+
+.footer-policy a{
+   color: blue;
+   text-decoration: none;
+}
+
+.footercard2{
+   text-align: left;
+   margin-right: 70px;
+}
+
+.footer-stay-updated{
+   font-weight: 500;
+   margin-top: 15px;
+   margin-bottom: 8px;
+}
+
+.footer-bio{
+   margin-bottom: 15px;
+}
+
+footer input{
+   width: 180px;
+   height: 25px;
+   outline: none;
+   border: 1px solid #666;
+}
+
+footer input:focus{
+    outline:2px solid black;
+    border:  1px solid transparent;
+}
+
+footer button{
+   height: 30px;
+   width: 80px;
+   background-color: blue;
+   border: none;
+   color: white;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+
+footer button:hover{
+    background-color: rgb(0, 0, 114);
+}
+
+
+
+
+
+
+
+
+/* tablet style */
+
+
+
+@media (min-width: 828px) and (max-width: 1249px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}

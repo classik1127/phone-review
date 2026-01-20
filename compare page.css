@@ -1,0 +1,453 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: rgb(248, 247, 247);
+    box-sizing: border-box;
+   
+ }
+
+html{
+    scroll-behavior: smooth;
+ }
+
+ hr{
+    border: none;
+    border-bottom: 1px solid lightslategray;
+ }
+ /* for the navbar  */
+ .navbar{
+    display: flex;
+    padding: 18px 5px;
+    justify-content: space-around;   
+    height: 24px;
+    background-color: rgba(245, 245, 245, 0.90);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* .logo-icon{
+
+
+}  */
+
+
+.search-box {
+  background-color: white;
+  width: 500px;
+  border-radius: 6px;
+  padding: 17px 12px;
+  margin-top: -7px;
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 13px;
+}
+
+#search-box-input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+} 
+
+/* for mobile navbar */
+
+.mobile-navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color:  rgba(245, 245, 245, 0.90);
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(5px);
+}
+.mobile-navbar a{
+    width: 100% !important;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-navbar li{
+    list-style: none;
+    padding: 25px;
+    width: 100% !important;
+    background-color: transparent;
+}
+.mobile-navbar ul{
+    width: 100%;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+
+#btn{
+    display: none;
+}
+
+#material-symbols-close{
+    cursor: pointer;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.mobile-navbar li:hover{
+    background-color: #666;
+}
+
+ /* search section  */
+
+.search-section{
+   display: flex;
+   justify-content: space-around;
+   padding: 25px;
+}
+
+.search-section input{
+   border: none;
+   border-bottom: 2px solid black;
+   background-color: transparent;
+   outline: none;
+}
+.search-section button{
+   border: none;
+   padding: 8px 5px;
+   background-color: #666;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.hidbtn{
+   display: none;
+}
+
+  /* mini view section */
+
+.mini-view{
+   display: flex;
+   margin-bottom: 15px;
+}
+.mini-view-card{
+   width: 100%;
+   align-items: center;
+   text-align: center;
+}
+
+.mini-view-card img{
+   width: 250px;
+   height: inherit;
+   margin-bottom: 5px;
+}
+
+  /* main compare section */
+
+.comparesection{
+   margin-top: 20px;
+   
+}
+.comparesection-card{
+   display: flex;
+   height: 200px;
+   background-color: transparent;
+}
+
+.comparesection h3{
+   padding: 3px 10px;
+}
+
+aside{
+   background-color: transparent;
+   width: 100%;
+   padding-left: 35px !important;
+   box-sizing: border-box;
+}
+
+aside ul{
+   padding: 5px;
+}
+
+aside li{
+   margin-bottom: 8px;
+   
+}
+
+.leftpart{
+   border-right: 2px solid black;
+}
+
+.rightpart{
+   padding-top: 8px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+
+footer{
+   height: 180px;
+}
+
+footer hr{
+   margin: 20px;
+}
+
+.footer-container{
+   display: flex;
+   justify-content: space-between;
+   padding: 25px;
+}
+
+.footercard1-contact{
+   font-weight: 500;
+   margin-top: 50px;
+   margin-bottom: 15px;
+}
+
+.footercard1-email a{
+   color: blue;
+   text-decoration: none;padding: 10px;
+}
+
+.footer-policy{
+   margin-top: 89px;
+}
+
+.footer-policy a{
+   color: blue;
+   text-decoration: none;
+}
+
+.footercard2{
+   text-align: left;
+   margin-right: 70px;
+}
+
+.footer-stay-updated{
+   font-weight: 500;
+   margin-top: 15px;
+   margin-bottom: 8px;
+}
+
+.footer-bio{
+   margin-bottom: 15px;
+}
+
+footer input{
+   width: 180px;
+   height: 25px;
+   outline: none;
+   border: 1px solid #666;
+}
+
+footer input:focus{
+    outline:2px solid black;
+    border:  1px solid transparent;
+}
+
+footer button{
+   height: 30px;
+   width: 80px;
+   background-color: blue;
+   border: none;
+   color: white;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+
+footer button:hover{
+    background-color: rgb(0, 0, 114);
+}
+
+
+
+
+
+
+@media (min-width: 828px) and (max-width: 1249px){
+
+   /* navbar section */
+
+    .search-box{
+        width: 350px;
+    }
+
+    /* mini view section */
+
+    .mini-view{
+    height: 400px;
+    }
+
+    .mini-view-card-img img{
+    width:150px;
+    padding: 15px;
+    margin-top: 50px;
+    }
+
+    .mini-view-details-container{
+        display: table-row-group;
+    
+    }
+
+    .mini-view-build{
+        margin-top: 20px;
+    }
+
+    
+    /* footer section */
+
+    footer input{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* for side view mobile display */
+
+@media (min-width: 600px) and (max-width: 828px){
+
+    /* for the nav bar */
+
+    .hidden{
+        display: none !important;
+    }
+    .search-box{
+        width: 400px;
+    }
+
+    
+    .mobile-navbar{
+        width: 100% !important;
+    }
+
+    #btn{
+    display: block;
+   }
+
+    /* footer section */
+
+    footer button{
+        margin: 7px;
+    }
+
+}
+
+
+/* for mobile view */
+
+
+@media (min-width: 200px) and (max-width: 599px){
+
+    /* navbar section */
+
+    .hidden{
+        display: none !important;
+    }
+    .search-box{
+        width: 200px;
+    }
+
+    .mobile-navbar{
+        width: 100% !important;
+    }
+
+    #btn{
+    display: block;
+    right: 0;
+    }
+
+     /* search section  */
+
+   .search-section{
+      padding: 15px !important;
+      justify-content: space-around;
+      gap: 25px;
+
+   }
+
+   .search-section button{
+   border: none;
+   padding: 4px 3px;
+   }
+
+   .search-section input{
+      width: 120px;
+   }
+
+   .mini-view-card img{
+   width: 150px;
+   height: inherit;
+   margin-bottom: 5px;
+   }
+
+   .hidbtn{
+      display: inline-block;
+   }
+
+   .hidbtn2{
+      display: none;
+   }
+
+   .search-section input{
+      margin-bottom: 10px;
+      margin-top: 12px;
+   }
+
+    /* comparesection */
+
+    .comparesection-card{
+      height: 300px;
+      padding: 0;
+      margin: 0;
+    }
+
+    
+
+    /* footer section */
+
+    
+   footer button{
+    margin: 6PX;
+   }
+
+}
