@@ -1,13 +1,13 @@
-const btn = document.getElementById("btn");
+const openbtn = document.getElementById("openbtn");
 
-btn.onclick  =  function () {
+openbtn.onclick  =  function () {
     const mobilenavbar = document.getElementById("mobilenavbar");
     mobilenavbar.style.display = "flex"
 }
 
-const btn2 = document.getElementById("btn2");
+const closebtn = document.getElementById("closebtn");
 
-btn2.onclick  =  function () {
+closebtn.onclick  =  function () {
     const mobilenavbar = document.getElementById("mobilenavbar");
     mobilenavbar.style.display = "none"
 }

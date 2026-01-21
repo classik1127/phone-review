@@ -1,18 +1,13 @@
-// const btn = document.getElementById("btn");
+const openbtn = document.getElementById("openbtn");
 
+openbtn.onclick  =  function () {
+    const mobilenavbar = document.getElementById("mobilenavbar");
+    mobilenavbar.style.display = "flex"
+}
 
-// btn.onclick = function(){
-//     const card = document.getElementById("card");
-//     const result = document.getElementById("result");
+const closebtn = document.getElementById("closebtn");
 
-//     if (card.style.backgroundColor === "white") {
-//         card.style.backgroundColor = "black";
-//         result.textContent = "dark mode";
-//         result.style.color = "white"
-//     }
-//      else  {
-//           card.style.backgroundColor = "black" 
-//           result.textContent = "day mode";
-//      }
-
-// }
+closebtn.onclick  =  function () {
+    const mobilenavbar = document.getElementById("mobilenavbar");
+    mobilenavbar.style.display = "none"
+}

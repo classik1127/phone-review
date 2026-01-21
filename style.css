@@ -30,12 +30,12 @@ html{
     z-index: 1;
 }
 
-.logo-icon{
+/* .logo-icon{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 7px;
     margin-right: 12px;
-} 
+}  */
 
 
 .search-box {
@@ -122,7 +122,7 @@ html{
     cursor: pointer;
 }
 
-#btn{
+#openbtn{
     display: none;
 }
 
@@ -901,7 +901,7 @@ footer button:hover{
         animation-iteration-count: 1;
     }
 
-    #btn{
+    #openbtn{
     display: block;
     right: 0;
     }
@@ -1040,9 +1040,21 @@ footer button:hover{
 
         /* footer section */
 
+    .footer-container{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+    }
+
+   footer form{
+    display: flex;
+   }
     
    footer button{
     margin: 6PX;
+   }
+   footer input{
+    padding: 5px;
    }
 
 }

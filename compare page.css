@@ -445,9 +445,22 @@ footer button:hover{
 
     /* footer section */
 
+   
+    .footer-container{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+    }
+
+   footer form{
+    display: flex;
+   }
     
    footer button{
     margin: 6PX;
+   }
+   footer input{
+    padding: 5px;
    }
 
 }
